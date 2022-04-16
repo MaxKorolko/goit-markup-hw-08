@@ -1,0 +1,23 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--primary-bg-color);
+}
+
+.footer-content {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.join-tittle {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
