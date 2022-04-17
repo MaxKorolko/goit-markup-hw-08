@@ -1,6 +1,6 @@
 .background {
   max-width: 1600px;
-  height: 600px;
+  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--primary-bg-color);
@@ -12,8 +12,13 @@
 }
 
 .hero {
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
 
   text-align: center;
 
@@ -22,9 +27,15 @@
 
     color: var(--secondary-bg-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26;
+    line-height: 1.61;
+
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }
