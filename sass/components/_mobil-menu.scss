@@ -1,0 +1,139 @@
+.navigation {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+    width: 100%;
+    min-height: 60px;
+  }
+
+  &__btn {
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    background-color: var(--secondary-bg-color);
+    cursor: pointer;
+    border: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__btn-open,
+  &__btn-close {
+    fill: currentColor;
+  }
+
+  &__btn-close {
+    display: none;
+  }
+
+  &__btn.is-open &__btn-close {
+    display: block;
+  }
+
+  &__btn.is-open &__btn-open {
+    display: none;
+  }
+
+  &__menu-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    @media screen and (max-width: 767px) {
+      &.is-open {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 1;
+      }
+    }
+
+    padding: 48px 40px;
+    display: none;
+
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+  }
+}
+
+.mobil-nav {
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #212121;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+
+    &--carrent {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.mobil-contacts {
+  margin-bottom: 64px;
+}
+
+.mobil-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobil-contacts__link-phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobil-contacts__link-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobil-soc__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobil-soc__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobil-soc__link {
+  display: block;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.link-reset {
+  padding-left: 0;
+}

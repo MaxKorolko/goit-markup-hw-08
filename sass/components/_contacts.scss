@@ -1,9 +1,10 @@
 .contacts {
-  display: flex;
   margin-left: auto;
 
   &__item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__link {
@@ -22,6 +23,11 @@
     &:focus {
       color: var(--accent-color);
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.16;
+    }
   }
 
   &__icon {
@@ -29,5 +35,17 @@
     height: 12px;
     margin-right: 10px;
     fill: currentColor;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
