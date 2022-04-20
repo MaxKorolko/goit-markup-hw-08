@@ -404,7 +404,7 @@ body {
 }
 .occupation__images {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -461,7 +461,7 @@ body {
 .team__images {
   margin-bottom: 30px;
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .team__meta {
@@ -989,7 +989,7 @@ body {
 }
 .projects__images {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .projects__description {
