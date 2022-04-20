@@ -404,6 +404,8 @@ body {
 }
 .occupation__images {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .team {
@@ -413,14 +415,16 @@ body {
   margin-bottom: 30px;
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
 @media screen and (min-width: 1200px) {
   .team__tittle {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 @media screen and (min-width: 768px) {
@@ -456,7 +460,9 @@ body {
 }
 .team__images {
   margin-bottom: 30px;
+  display: block;
   width: 100%;
+  height: auto;
 }
 .team__meta {
   margin-bottom: 16px;
@@ -984,6 +990,7 @@ body {
 .projects__images {
   display: block;
   width: 100%;
+  height: auto;
 }
 .projects__description {
   padding: 20px 24px;
@@ -1102,6 +1109,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 .mobil-contacts__link-mail {
@@ -1110,6 +1118,7 @@ body {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
+  text-decoration: none;
 }
 
 .mobil-soc__list {
